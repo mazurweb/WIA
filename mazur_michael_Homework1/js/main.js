@@ -60,10 +60,11 @@ Reminder - set the style first then draw.
 
 //Draw Rectangle here
 
-    rtx.fillRect(0,0,50,100);
+
     rtx.fillStyle = "#0030DD";
-    rtx.strokeRect(0,0,50,100);
     rtx.strokeStyle = "#000";
+    rtx.fillRect(0,0,50,100);
+    rtx.strokeRect(0,0,50,100);
     rtx.lineWidth = 2;
 
     /*******************************************
@@ -79,7 +80,17 @@ Reminder - set the style first then draw.
      ********************************************/
 
 
+
 //Draw Circle here
+
+    ctx.fillStyle = "rgba(255,0,0,0.5)";
+    ctx.strokeStyle = "#000";
+    ctx.lineWidth = 2;
+
+    ctx.beginPath();
+    ctx.arc(50,50,30,0,2*Math.PI);
+    ctx.fill();
+    ctx.stroke();
 
 
     /*******************************************
@@ -93,6 +104,23 @@ Reminder - set the style first then draw.
 
      ********************************************/
 
+    ptx.fillStyle =  "#e5e600";
+    ptx.strokeStyle = "#000";
+
+    ptx.beginPath();
+    ptx.moveTo(100, 100);
+    ptx.lineTo(115, 130);
+    ptx.lineTo(153, 133);
+    ptx.lineTo(120, 158);
+    ptx.lineTo(130, 198);
+    ptx.lineTo(100, 178);
+    ptx.lineTo(70, 198);
+    ptx.lineTo(80,158);
+    ptx.lineTo(47, 133);
+    ptx.lineTo(85, 130);
+    ptx.closePath();
+    ptx.fill();
+    ptx.stroke();
 
 //Draw Star here
 
@@ -109,6 +137,18 @@ Reminder - set the style first then draw.
 
      ********************************************/
 
+    btx.fillStyle = "#cb2022";
+    btx.strokeStyle = "#000";
+
+    btx.beginPath();
+    btx.moveTo(100, 100);
+    btx.bezierCurveTo(100, 50, 200, 50, 200, 100);
+    btx.bezierCurveTo(200, 90, 167, 90, 167, 100);
+    btx.bezierCurveTo(167, 90, 134, 90, 134, 100);
+    btx.bezierCurveTo(134, 90, 100, 90, 100, 100);
+    btx.fill();
+    btx.stroke();
+
 //Draw Umbrella top here
 
     /*******************************************
@@ -118,6 +158,10 @@ Reminder - set the style first then draw.
      Draw text into your canvas.  It can said whatever you would like in any color.
 
      ********************************************/
+
+    var type = "This is canvas text :O";
+    ttx.font = "22px Arial"
+    ttx.fillText(type, 50,50);
 
 //Draw text here
 
@@ -133,6 +177,14 @@ Reminder - set the style first then draw.
      Reminder to use the drawImage method for all 3 of the ways.
 
      ********************************************/
+
+
+    var img = document.querySelector("img");
+    itx.width = 3300;
+    itx.height = 1088;
+    itx.drawImage(img,0,0);
+    itx.drawImage(img,0,0,1650,544);
+    itx.drawImage(img,200,380,450,430,700,689,450,300);
 
 //Draw images here
 
