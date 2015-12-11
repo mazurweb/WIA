@@ -1,0 +1,32 @@
+<doctype! html>
+<html>
+<head>
+<title>Plugin Example</title>
+<style>
+#simplemodal-container a.modalCloseImg {
+	background:url(/img/x.png) no-repeat; /* adjust url as required */
+	width:25px;
+	height:29px;
+	display:inline;
+	z-index:3200;
+	position:absolute;
+	top:-15px;
+	right:-18px;
+	cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+Hi there this is a test go ahead and move your mouse towards the top of the browser to close the page.
+
+<div style="display: none; background: #fff;" id="exit_popup">
+		<p>Well HELLO THERE THIS IS A POP UP EXIT WINDOW!</p>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="jquery.simplemodal.js"></script>
+<script src="init.js"></script>
+
+</body>
+</html>
