@@ -3,7 +3,7 @@ $(document).ready(function() {
 $(document).mouseover(function(e) {
 if(e.clientY <= 25)
 {
-	$('#exit_content').modal({onOpen: modalOpen, onClose: simplemodal_close});
+	jQuery('#exit_content').modal({onOpen: modalOpen, onClose: simplemodal_close});
 }
 });
 });
